@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+  }
+  
+  body {
+    background-color: #fafafa;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  button {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  #como-ajudar {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-top: -0.5rem;
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  #como-ajudar h1 {
+    color: #000000;
+    text-shadow: 3px 0 white, -3px 0 white, 0 3px white, 0 -3px white, 2px 2px white, -2px -2px white, 2px -2px white, -2px 2px white;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  
+  #como-ajudar ul {
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #como-ajudar button {
+    background-color: #41992b;
+    color: #ffffff;
+    padding: 0.5rem;
+    border: 3px solid #000000;
+    border-radius: 5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  #como-ajudar button:hover {
+    background-color: #51bd35;
+  }
+  
+  .item-ajudar {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 0.5rem;
+    width: 85%;
+    height: 100%;
+    margin: 1rem;
+  }
+  
+  .item-ajudar h2 {
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .item-ajudar p {
+    margin: 1rem;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+    
+  .item-ajudar img {
+    width: 100%;
+  }
+  
+  #sobre-nos {
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    border-top: solid 2px #000000;
+    background-image: url("img/sobre_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #sobre-nos h1 {
+    color: #000000;
+    text-shadow: 3px 0 #ffffff, -3px 0 #ffffff, 0 3px #ffffff, 0 -3px #ffffff, 2px 2px #ffffff, -2px -2px #ffffff, 2px -2px #ffffff, -2px 2px #ffffff;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  #sobre-nos ul {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    list-style-type: none;
+    margin: 0;
+    margin-right: 3rem;
+    padding: 0;
+    font-size: 1.2rem;
+  }
+  
+  #sobre-nos p {
+    margin: 0.5rem;
+  }
+  
+  .item-sobre {
+    background-color: #ffffff;
+    width: 50%;
+    padding: 1rem;
+    text-align: left;
+    border: solid 3px #000000;
+    border-radius: 0.5rem;
+  }
+  
+  /* width: menor que 1024px */
+  @media only screen and (max-width: 1024px) {
+    #sobre-nos ul {
+      margin-right: 1rem;
+    }
+    
+    .item-sobre {
+      width: 100%;
+    }
+  
+    #como-ajudar ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+    }
+  
+    #como-ajudar h1 {
+      color: #000000;
+      text-align: center;
+      padding-bottom: 0;
+    }
+  
+    #como-ajudar button {
+      margin: 1rem;
+    }
+  }
+  
+  /* width: menor que 768px */
+  @media only screen and (max-width: 768px) {
+    #sobre-nos ul {
+      margin: 2rem;
+    }
+  
+    #tartaruga {
+      display: none;
+    }
+  }
+  
